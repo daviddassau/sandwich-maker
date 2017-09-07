@@ -1,6 +1,4 @@
-// console.log("I'm in sandwichmaker");
+// This is the main JS file
 
-// SandwichMaker.setBread("Cinnamon Rasin");
-
-// let mySandwich = SandwichMaker.getBread();
-// console.log("mySandwich", mySandwich);
+let mySandwich = SandwichMaker.getBread();
+console.log("mySandwich", mySandwich);
