@@ -7,9 +7,9 @@ var finalSandwichPrice = 0;
 var selectedBread;
 
 let bread = document.getElementById("breadDiv");
-console.log(bread);
+// console.log(bread);
 let myBread = SandwichMaker.getBread();
-console.log("Bread Option", (myBread));
+// console.log("Bread Option", (myBread));
 
 
 bread.addEventListener("change", (e) => {
