@@ -1,9 +1,3 @@
-// let breadRadioWhite = document.getElementById("breadRadioWhite");
-// let breadRadioWheat = document.getElementById("breadRadioWheat");
-// let breadRadioAsiago = document.getElementById("breadRadioAsiago");
-
-
-
 var SandwichMaker = (function(oldSandwichMaker){
 	const bread = {"White": 2.00, "Wheat": 2.00, "Asiago": 3.00, "None": .00};
 
@@ -15,13 +9,13 @@ var SandwichMaker = (function(oldSandwichMaker){
 	};
 
 	for(var i = 0; i < bread.length; i++){
-		if(document.getElementById("breadRadioWhite").checked){
+		if(document.getElementById("breadCheckboxWhite").checked){
 			var breadPrices = bread.White[i];  // needs to reference the value of "White" in the array
-		} else if(document.getElementById("breadRadioWheat").checked){
+		} else if(document.getElementById("breadCheckboxWheat").checked){
 			var breadPrices = bread.Wheat[i];
-		} else if(document.getElementById("breadRadioAsiago").checked){
+		} else if(document.getElementById("breadCheckboxAsiago").checked){
 			var breadPrices = bread.Asiago[i];
-		} else if(document.getElementById("breadRadioNone").checked){
+		} else if(document.getElementById("breadCheckboxNone").checked){
 			var breadPrices = bread.None[i];
 		}
 	}

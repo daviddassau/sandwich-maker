@@ -14,29 +14,31 @@
 	<div class="row">
 		<div class="col-md-2">
 			<h3>Bread</h3>
-				<div class="radio">
-				  <label>
-				    <input type="radio" name="optionsRadios" id="breadRadioWhite" value="option1">
-				    White - $2.00
-				  </label>
-				</div>
-				<div class="radio">
-				  <label>
-				    <input type="radio" name="optionsRadios" id="breadRadioWheat" value="option2">
-				    Wheat - $2.00
-				  </label>
-				</div>
-				<div class="radio">
-				  <label>
-				    <input type="radio" name="optionsRadios" id="breadRadioAsiago" value="option3">
-				    Asiago - $3.00
-				  </label>
-				</div>
-				<div class="radio">
-				  <label>
-				    <input type="radio" name="optionsRadios" id="breadRadioNone" value="option4">
-				    No Bread
-				  </label>
+				<div id="breadDiv">
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" name="optionsRadios" id="breadCheckboxWhite" class="breadOption" value="White">
+					    White - $2.00
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" name="optionsRadios" id="breadCheckboxWheat" class="breadOption" value="Wheat">
+					    Wheat - $2.00
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" name="optionsRadios" id="breadCheckboxAsiago" class="breadOption" value="Asiago">
+					    Asiago - $3.00
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" name="optionsRadios" id="breadCheckboxNone" class="breadOption" value="None">
+					    No Bread
+					  </label>
+					</div>
 				</div>
 		</div>
 
@@ -45,25 +47,25 @@
 			<h3>Meat</h3>
 				<div class="checkbox">
 				  <label>
-				    <input id="meatCheckboxHam" type="checkbox" value="">
+				    <input id="meatCheckboxHam" class="meatOption" type="checkbox" value="">
 				    Ham - $2.00
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="meatCheckboxTurkey" type="checkbox" value="">
+				    <input id="meatCheckboxTurkey" class="meatOption" type="checkbox" value="">
 				    Turkey - $2.00
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="meatCheckboxChicken" type="checkbox" value="">
+				    <input id="meatCheckboxChicken" class="meatOption" type="checkbox" value="">
 				    Chicken - $2.00
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="meatCheckboxNone" type="checkbox" value="">
+				    <input id="meatCheckboxNone" class="meatOption" type="checkbox" value="">
 				    No Meat
 				  </label>
 				</div>
@@ -74,25 +76,25 @@
 			<h3>Cheese</h3>
 				<div class="checkbox">
 				  <label>
-				    <input id="cheeseCheckboxAmerican" type="checkbox" value="">
+				    <input id="cheeseCheckboxAmerican" class="cheeseOption" type="checkbox" value="">
 				    American - $1.00
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="cheeseCheckboxSwiss" type="checkbox" value="">
+				    <input id="cheeseCheckboxSwiss" class="cheeseOption" type="checkbox" value="">
 				    Swiss - $1.00
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="cheeseCheckboxProvolone" type="checkbox" value="">
+				    <input id="cheeseCheckboxProvolone" class="cheeseOption" type="checkbox" value="">
 				    Provolone - $1.00
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="cheeseCheckboxNone" type="checkbox" value="">
+				    <input id="cheeseCheckboxNone" class="cheeseOption" type="checkbox" value="">
 				    No Cheese
 				  </label>
 				</div>
@@ -103,25 +105,25 @@
 			<h3>Condiments</h3>
 				<div class="checkbox">
 				  <label>
-				    <input id="condiCheckboxMayo" type="checkbox" value="">
+				    <input id="condiCheckboxMayo" class="condiOption" type="checkbox" value="">
 				    Mayo - $.50
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="condiCheckboxMustard" type="checkbox" value="">
+				    <input id="condiCheckboxMustard" class="condiOption" type="checkbox" value="">
 				    Mustard - $.50
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="condiCheckboxItalian" type="checkbox" value="">
+				    <input id="condiCheckboxItalian" class="condiOption" type="checkbox" value="">
 				    Italian Dressing - $.50
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="condiCheckboxNone" type="checkbox" value="">
+				    <input id="condiCheckboxNone" class="condiOption" type="checkbox" value="">
 				    No Condiments
 				  </label>
 				</div>
@@ -132,25 +134,25 @@
 			<h3>Veggies</h3>
 				<div class="checkbox">
 				  <label>
-				    <input id="vegCheckboxLettuce" type="checkbox" value="">
+				    <input id="vegCheckboxLettuce" class="veggieOption" type="checkbox" value="">
 				    Lettuce - $.50
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="vegCheckboxTomoatoes" type="checkbox" value="">
+				    <input id="vegCheckboxTomoatoes" class="veggieOption" type="checkbox" value="">
 				    Tomatoes - $.50
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="vegCheckboxOnions" type="checkbox" value="">
+				    <input id="vegCheckboxOnions" class="veggieOption" type="checkbox" value="">
 				    Onions - $.50
 				  </label>
 				</div>
 				<div class="checkbox">
 				  <label>
-				    <input id="vegCheckboxNone" type="checkbox" value="">
+				    <input id="vegCheckboxNone" class="veggieOption" type="checkbox" value="">
 				    No Veggies
 				  </label>
 				</div>
