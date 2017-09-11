@@ -3,6 +3,8 @@
 // Variable to hold the final price. Default to 0.
 var finalSandwichPrice = 0;
 
+var sandwichTotal = document.getElementById("sandwichTotal");
+
 
 var selectedBread; // Variable to hold the bread that the user selects
 let bread = document.getElementById("breadDiv"); // Getting the bread div from html
@@ -13,10 +15,10 @@ bread.addEventListener("change", (e) => {
 	for(let key in myBread){
 		if(selectedBread === key && e.target.checked){
 			finalSandwichPrice += myBread[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		} else if(selectedBread === key && e.target.checked === false){
 			finalSandwichPrice -= myBread[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		}
 	}
 });
@@ -31,10 +33,10 @@ meat.addEventListener("change", (e) => {
 	for(let key in myMeat){
 		if(selectedMeat === key && e.target.checked){
 			finalSandwichPrice += myMeat[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		} else if(selectedMeat === key && e.target.checked === false){
 			finalSandwichPrice -= myMeat[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		}
 	}
 });
@@ -49,10 +51,10 @@ cheese.addEventListener("change", (e) => {
 	for(let key in myCheese){
 		if(selectedCheese === key && e.target.checked){
 			finalSandwichPrice += myCheese[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		} else if(selectedCheese === key && e.target.checked === false){
 			finalSandwichPrice -= myCheese[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		}
 	}
 });
@@ -67,10 +69,10 @@ condiments.addEventListener("change", (e) => {
 	for(let key in myCondiments){
 		if(selectedCondiments === key && e.target.checked){
 			finalSandwichPrice += myCondiments[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		} else if(selectedCondiments === key && e.target.checked === false){
 			finalSandwichPrice -= myCondiments[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		}
 	}
 });
@@ -85,13 +87,14 @@ veggies.addEventListener("change", (e) => {
 	for(let key in myVeggies){
 		if(selectedVeggies === key && e.target.checked){
 			finalSandwichPrice += myVeggies[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		} else if(selectedVeggies === key && e.target.checked === false){
 			finalSandwichPrice -= myVeggies[key];
-			console.log(finalSandwichPrice);
+			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
 		}
 	}
 });
+
 
 
 
