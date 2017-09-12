@@ -4,7 +4,7 @@
 var finalSandwichPrice = 0;
 
 var sandwichTotal = document.getElementById("sandwichTotal");
-
+var itemFoods = document.getElementById("sandwichItems");
 
 var selectedBread; // Variable to hold the bread that the user selects
 let bread = document.getElementById("breadDiv"); // Getting the bread div from html
@@ -15,10 +15,12 @@ bread.addEventListener("change", (e) => {
 	for(let key in myBread){
 		if(selectedBread === key && e.target.checked){
 			finalSandwichPrice += myBread[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.innerHTML += `<p id="${key}">$${myBread[key]} ${key}</p>`;
 		} else if(selectedBread === key && e.target.checked === false){
 			finalSandwichPrice -= myBread[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.removeChild(document.getElementById(`${key}`));
 		}
 	}
 });
@@ -33,10 +35,12 @@ meat.addEventListener("change", (e) => {
 	for(let key in myMeat){
 		if(selectedMeat === key && e.target.checked){
 			finalSandwichPrice += myMeat[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.innerHTML += `<p id="${key}">$${myMeat[key]} ${key}</p>`;
 		} else if(selectedMeat === key && e.target.checked === false){
 			finalSandwichPrice -= myMeat[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.removeChild(document.getElementById(`${key}`));
 		}
 	}
 });
@@ -51,10 +55,12 @@ cheese.addEventListener("change", (e) => {
 	for(let key in myCheese){
 		if(selectedCheese === key && e.target.checked){
 			finalSandwichPrice += myCheese[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.innerHTML += `<p id="${key}">$${myCheese[key]} ${key}</p>`;
 		} else if(selectedCheese === key && e.target.checked === false){
 			finalSandwichPrice -= myCheese[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.removeChild(document.getElementById(`${key}`));
 		}
 	}
 });
@@ -69,10 +75,12 @@ condiments.addEventListener("change", (e) => {
 	for(let key in myCondiments){
 		if(selectedCondiments === key && e.target.checked){
 			finalSandwichPrice += myCondiments[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.innerHTML += `<p id="${key}">$${myCondiments[key]} ${key}</p>`;
 		} else if(selectedCondiments === key && e.target.checked === false){
 			finalSandwichPrice -= myCondiments[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.removeChild(document.getElementById(`${key}`));
 		}
 	}
 });
@@ -87,10 +95,12 @@ veggies.addEventListener("change", (e) => {
 	for(let key in myVeggies){
 		if(selectedVeggies === key && e.target.checked){
 			finalSandwichPrice += myVeggies[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.innerHTML += `<p id="${key}">$${myVeggies[key]} ${key}</p>`;
 		} else if(selectedVeggies === key && e.target.checked === false){
 			finalSandwichPrice -= myVeggies[key];
-			sandwichTotal.innerHTML = '$' + finalSandwichPrice;
+			sandwichTotal.innerHTML = `$${finalSandwichPrice}`;
+			itemFoods.removeChild(document.getElementById(`${key}`));
 		}
 	}
 });
